@@ -10,5 +10,5 @@ void setupServiceLocator() {
   getIt.registerLazySingleton<LocalStorage>(() => LocalStorage());
   getIt.registerLazySingleton<Auth>(() => Auth());
   getIt.registerLazySingleton<AppState>(() => AppState());
-  getIt.registerLazySingleton<DatabaseHelper>(() => DatabaseHelper());
+  getIt.registerLazySingleton<AppDatabase>(() => AppDatabase());
 }
